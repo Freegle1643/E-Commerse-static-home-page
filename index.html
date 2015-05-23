@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head lang="chinese">
+    <meta charset="UTF-8">
+    <title>UBuy!</title>
+    <link type="text/css" rel="stylesheet" href="style/reset.css">
+    <link type="text/css" rel="stylesheet" href="style/main.css">
+
+</head>
+<body>
+<div>
+    <div class="topBar">
+        <div class="comWidth">
+            <div class="leftArea">
+                <a href="#" class="account">我的 UBuy!</a>
+            </div>
+            <div class="rightArea">
+                欢迎来到 UBuy! <a href="#"> [登录]</a><a href="#">[免费注册]</a>
+            </div>
+        </div>
+    </div>
+    <div class="logoBar">
+        <div class="comWidth">
+            <div class="logo fl">
+                <a href="#"><img src="images/logo.jpg" alt="UBuy!"></a>
+            </div>
+            <div class="search_box fl">
+                <input type="text" class="search_text fl">
+                <input type="button" class="search_btn fr" value="搜 索">
+            </div>
+            <div class="shopCart fr">
+                <span class="shopText fl">购物车</span>
+                <span class="shopNum fl">0</span>
+            </div>
+        </div>
+    </div>
+    <div class="navBox">
+        <div class="comWidth">
+            <div class="shopClass fl">
+                <h3>商品分类<i></i></h3>
+                <div class="shopClass_show">
+                    <dl class="shopClass_item">
+                        <dt><a href="#" class="b">通讯 数码</a></dt>
+                        <dd><a href="#">iPhone 6</a> <a href="#">三星</a> <a href="#">P8</a> </dd>
+                    </dl>
+                    <dl class="shopClass_item">
+                        <dt><a href="#" class="b">电脑 办公</a></dt>
+                        <dd><a href="#">MacBook</a> <a href="#">戴尔</a> <a href="#">ThinkPad</a> </dd>
+                    </dl>
+                    <dl class="shopClass_item">
+                        <dt><a href="#" class="b">书籍 阅读</a></dt>
+                        <dd><a href="#">三体</a> <a href="#">IT</a> <a href="#">管理</a> </dd>
+                    </dl>
+                    <dl class="shopClass_item">
+                        <dt><a href="#" class="b">夏装 衣服</a></dt>
+                        <dd><a href="#">Jack & Jones</a> <a href="#">优衣库</a> <a href="#">Lee</a> </dd>
+                    </dl>
+                    <dl class="shopClass_item">
+                        <dt><a href="#" class="b">蔬果 饮品</a></dt>
+                        <dd><a href="#">啤酒</a> <a href="#">洋酒</a> <a href="#">智利车厘子</a> </dd>
+                    </dl>
+                </div>
+            </div>
+            <ul class="nav fl">
+                <li><a href="#" class="active">数码城</a></li>
+                <li><a href="#">超市</a></li>
+                <li><a href="#">时尚街</a></li>
+                <li><a href="#">二手淘</a></li>
+                <li><a href="#">团购乐</a></li>
+                <li><a href="#">特惠专区</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="banner comWidth clearfix">
+    <div class="banner_bar">
+        <ul  class="imgBox">
+            <!--<li><a href="#"><img src="images/banner/banner01.jpg" alt="Jack & Jones"></a> </li>
+            <li><a href="#"><img src="images/banner/banner02.jpg" alt="UNIQLO"></a> </li>
+            <li><a href="#"><img src="images/banner/banner03.jpg" alt="H&M"></a> </li>-->
+            <script language =javascript>
+                var curIndex1=0;
+                //时间间隔 单位毫秒
+                var timeInterval1=1600;
+                var arr1=new Array();
+                arr1[0]="images/banner/banner01.jpg";
+                arr1[1]="images/banner/banner02.jpg";
+                arr1[2]="images/banner/banner03.jpg";
+                setInterval(changeImg1,timeInterval1);
+                function changeImg1()
+                {
+                    var obj=document.getElementById("obj1");
+                    if (curIndex1==arr1.length-1)
+                    {
+                        curIndex1=0;
+                    }
+                    else
+                    {
+                        curIndex1+=1;
+                    }
+                    obj.src=arr1[curIndex1];
+                }
+            </script>
+
+            <img id=obj1 src ="images/banner/banner01.jpg" border =0 />
+        </ul>
+        <!--<div class="imgNum">
+            <a href="#" class="active"></a><a href="#"></a><a href="#"></a>
+        </div>-->
+    </div>
+</div>
+<div class="shopTitle comWidth">
+    <span class="icon1"></span><h3>旗舰手机</h3>
+    <a href="#" class="more">更多&gt;&gt;</a>
+</div>
+<div class="shopList comWidth clearfix">
+    <div class="leftArea">
+        <script language =javascript>
+            var curIndex2=0;
+            //时间间隔 单位毫秒
+            var timeInterval2=2000;
+            var arr2=new Array();
+            arr2[0]="images/cells1.jpg";
+            arr2[1]="images/cells2.jpg";
+            setInterval(changeImg2,timeInterval2);
+            function changeImg2()
+            {
+                var obj=document.getElementById("obj2");
+                if (curIndex2==arr2.length-1)
+                {
+                    curIndex2=0;
+                }
+                else
+                {
+                    curIndex2+=1;
+                }
+                obj.src=arr2[curIndex2];
+            }
+        </script>
+
+        <img id=obj2 src ="images/cells1.jpg" border =0 />
+    </div>
+    <div class="rightArea">
+        <div class="shopList_top clearfix">
+            <div class="shop_item">
+                <div class="shop_img">
+                    <a href="#"><img src="images/cellp/930.jpg" alt="Lumia 930"></a>
+                </div>
+                <h3>Lumia 930 旗舰机型</h3>
+                <p>2499元</p>
+            </div>
+            <div class="shop_item">
+                <div class="shop_img">
+                    <a href="#"><img src="images/cellp/ip6+.jpg" alt="iPhone 6 plus"></a>
+                </div>
+                <h3>iPhone 6 plus 岂止于大</h3>
+                <p>5788元</p>
+            </div>
+            <div class="shop_item">
+                <div class="shop_img">
+                    <a href="#"><img src="images/cellp/p8.jpg" alt="Huawei P8"></a>
+                </div>
+                <h3>华为P8 国产旗舰 高端奢华</h3>
+                <p>3998元</p>
+            </div>
+            <div class="shop_item">
+                <div class="shop_img">
+                    <a href="#"><img src="images/cellp/s6.jpg" alt="Galaxy s6"></a>
+                </div>
+                <h3>三星新作 盖世6 光学防抖</h3>
+                <p>5088元</p>
+            </div>
+        </div>
+        <div class="shopList_sm clearfix">
+            <div class="shopItem_sm">
+                <div class="shopItem_smImg">
+                    <a href="#"><img src="images/celld1.jpg" alt="Casio 手表"></a>
+                </div>
+            </div>
+            <div class="shopItem_sm">
+                <div class="shopItem_smImg">
+                    <a href="#"><img src="images/celld2.jpg" alt="JBL 音箱"></a>
+                </div>
+            </div>
+            <div class="shopItem_sm">
+                <div class="shopItem_smImg">
+                    <a href="#"><img src="images/celld3.jpg" alt="行车记录仪"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="shopTitle comWidth">
+    <span class="icon2"></span><h3>品牌笔记本</h3>
+    <a href="#" class="more">更多&gt;&gt;</a>
+</div>
+<div class="shopList comWidth clearfix">
+    <div class="leftArea">
+        <script language =javascript>
+            var curIndex3=0;
+            //时间间隔 单位毫秒
+            var timeInterval3=2000;
+            var arr3=new Array();
+            arr3[0]="images/laps1.jpg";
+            arr3[1]="images/laps2.jpg";
+            setInterval(changeImg3,timeInterval3);
+            function changeImg3()
+            {
+                var obj=document.getElementById("obj3");
+                if (curIndex3==arr3.length-1)
+                {
+                    curIndex3=0;
+                }
+                else
+                {
+                    curIndex3+=1;
+                }
+                obj.src=arr3[curIndex3];
+            }
+        </script>
+
+        <img id=obj3 src ="images/laps1.jpg" border =0 />
+    </div>
+    <div class="rightArea">
+        <div class="shopList_top clearfix">
+            <div class="shop_item">
+                <div class="shop_img">
+                    <a href="#"><img src="images/laptopp/dexps.jpg" alt="Dell XPS"></a>
+                </div>
+                <h3>DELL XPS13D 酷睿i7</h3>
+                <p>8888元</p>
+            </div>
+            <div class="shop_item">
+                <div class="shop_img">
+                    <a href="#"><img src="images/laptopp/macpro.jpg" alt="MacBook Pro"></a>
+                </div>
+                <h3>配备Retina显示屏的13.3寸Mac</h3>
+                <p>9516元</p>
+            </div>
+            <div class="shop_item">
+                <div class="shop_img">
+                    <a href="#"><img src="images/laptopp/x1.jpg" alt="联想 X1"></a>
+                </div>
+                <h3>ThinkPad X1 Carbon</h3>
+                <p>11499元</p>
+            </div>
+            <div class="shop_item">
+                <div class="shop_img">
+                    <a href="#"><img src="images/laptopp/to%20z30.jpg" alt="东芝 z30"></a>
+                </div>
+                <h3>东芝商务轻薄 Z30</h3>
+                <p>16999元</p>
+            </div>
+        </div>
+        <div class="shopList_sm clearfix">
+            <div class="shopItem_sm">
+                <div class="shopItem_smImg">
+                    <a href="#"><img src="images/lapd1.jpg" alt="联想游戏本"></a>
+                </div>
+            </div>
+            <div class="shopItem_sm">
+                <div class="shopItem_smImg">
+                    <a href="#"><img src="images/lapd2.jpg" alt="大促销"></a>
+                </div>
+            </div>
+            <div class="shopItem_sm">
+                <div class="shopItem_smImg">
+                    <a href="#"><img src="images/lapd3.jpg" alt="先锋耳机"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="shopTitle comWidth">
+    <span class="icon3"></span><h3>热门图书</h3>
+    <a href="#" class="more">更多&gt;&gt;</a>
+</div>
+<div class="shopList comWidth clearfix">
+    <div class="leftArea">
+        <script language =javascript>
+            var curIndex4=0;
+            //时间间隔 单位毫秒
+            var timeInterval4=2000;
+            var arr4=new Array();
+            arr4[0]="images/books1.jpg";
+            arr4[1]="images/books2.jpg";
+            setInterval(changeImg4,timeInterval4);
+            function changeImg4()
+            {
+                var obj=document.getElementById("obj4");
+                if (curIndex4==arr4.length-1)
+                {
+                    curIndex4=0;
+                }
+                else
+                {
+                    curIndex4+=1;
+                }
+                obj.src=arr4[curIndex4];
+            }
+        </script>
+
+        <img id=obj4 src ="images/books1.jpg" border =0 />
+    </div>
+    <div class="rightArea">
+        <div class="shopList_top clearfix">
+            <div class="shop_item">
+                <div class="shop_img">
+                    <a href="#"><img src="images/bookp/mmoon.jpg" alt="人月神话"></a>
+                </div>
+                <h3>人月神话</h3>
+                <p>68元</p>
+            </div>
+            <div class="shop_item">
+                <div class="shop_img">
+                    <a href="#"><img src="images/bookp/Robert.jpg" alt="罗伯特议事"></a>
+                </div>
+                <h3>罗伯特议事 亨利•罗伯特</h3>
+                <p>52元</p>
+            </div>
+            <div class="shop_item">
+                <div class="shop_img">
+                    <a href="#"><img src="images/bookp/santi.jpg" alt="三体"></a>
+                </div>
+                <h3>三体（1-3套装）刘慈欣</h3>
+                <p>93元</p>
+            </div>
+            <div class="shop_item">
+                <div class="shop_img">
+                    <a href="#"><img src="images/bookp/van.jpg" alt="凡尔纳"></a>
+                </div>
+                <h3>凡尔纳科幻经典 共11册（kindle)</h3>
+                <p>2.99元</p>
+            </div>
+        </div>
+        <div class="shopList_sm clearfix">
+            <div class="shopItem_sm">
+                <div class="shopItem_smImg">
+                    <a href="#"><img src="images/bookd1.jpg" alt="好书"></a>
+                </div>
+            </div>
+            <div class="shopItem_sm">
+                <div class="shopItem_smImg">
+                    <a href="#"><img src="images/bookd2.jpg" alt="kindle"></a>
+                </div>
+            </div>
+            <div class="shopItem_sm">
+                <div class="shopItem_smImg">
+                    <a href="#"><img src="images/bookd3.jpg" alt="360"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="h_25"></div>
+<div class="footer">
+    <p><a href="#"> 关于我们</a><i>|</i><a href="#">联系我们</a><i>|</i><a href="#">商家入驻</a><i>|</i><a href="#">营销中心</a><i>|</i><a href="#">手机UBuy!</a><i>|</i>
+        <a href="#">友情链接</a><i>|</i><a href="#">销售联盟</a><i>|</i><a href="#">English Site</a><i>|</i><a href="#">Contact Us</a></p>
+    <p>网络文化经营许可证京网文[2014]2148-348号&nbsp;&nbsp;违法和不良信息举报电话:4006561155&nbsp;&nbsp;Copyright &copy; 2004-2015&nbsp;&nbsp;UBuy.com 版权所有</p>
+    <p class="webG"><a href="#"><img src="images/webg01.jpg"></a><a href="#"><img src="images/webg02.jpg"></a>
+        <a href="#"><img src="images/webg03.jpg"></a></p>
+</div>
+</body>
+</html>
